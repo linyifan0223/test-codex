@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web 俄罗斯方块</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="board-wrap">
+      <canvas id="board" width="300" height="600" aria-label="俄罗斯方块游戏画布"></canvas>
+    </section>
+    <aside class="panel">
+      <h1>俄罗斯方块</h1>
+      <div class="stats">
+        <p>分数：<span id="score">0</span></p>
+        <p>等级：<span id="level">1</span></p>
+        <p>消行：<span id="lines">0</span></p>
+      </div>
+      <div class="controls">
+        <h2>操作说明</h2>
+        <ul>
+          <li>← / →：左右移动</li>
+          <li>↓：加速下落</li>
+          <li>↑：旋转</li>
+          <li>空格：直接落底</li>
+          <li>P：暂停 / 继续</li>
+        </ul>
+      </div>
+      <button id="restart" type="button">重新开始</button>
+      <p id="status">按任意方向键开始</p>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
